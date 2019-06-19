@@ -2,7 +2,7 @@ FROM debian:stretch
 
 LABEL "com.github.actions.name"="Checkout submodules"
 LABEL "com.github.actions.description"="Recursively checks out any submodules in your repository"
-LABEL "com.github.actions.icon"="github"
+LABEL "com.github.actions.icon"="package"
 LABEL "com.github.actions.color"="blue"
 
 LABEL "repository"="http://github.com/textbook/git-checkout-submodule-action"
