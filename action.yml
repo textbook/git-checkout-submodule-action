@@ -1,9 +1,15 @@
 name: Checkout submodules
 author: Jonathan Sharpe
 description: Recursively checks out any submodules in your repository
+inputs:
+  remote:
+    description: Set the --remote flag
+    required: false
 runs:
   using: docker
   image: Dockerfile
+  args:
+  - ${{ inputs.remote }}
 branding:
   icon: package
   color: blue

@@ -2,4 +2,9 @@
 
 set -e
 
-git submodule update --init --recursive
+FLAGS=('--init' '--recursive')
+if [ $1 ]; then
+  FLAGS+=('--remote')
+fi
+
+git submodule update "${FLAGS[@]}"

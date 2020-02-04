@@ -8,6 +8,16 @@ steps:
   uses: textbook/git-checkout-submodule-action@master
 ```
 
+You can optionally set the [`--remote`][2] flag:
+
+```yml
+steps:
+- name: Checkout submodules
+  uses: textbook/git-checkout-submodule-action@master
+  with:
+    remote: true
+```
+
 ## Alternatives
 
 You can use [git Actions][1] instead:
@@ -21,3 +31,4 @@ steps:
 ```
 
   [1]: https://github.com/marketplace/actions/git-actions
+  [2]: https://git-scm.com/docs/git-submodule#Documentation/git-submodule.txt---remote
