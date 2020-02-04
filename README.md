@@ -8,7 +8,7 @@ steps:
   uses: textbook/git-checkout-submodule-action@master
 ```
 
-You can optionally set the [`--remote`][2] flag:
+*New in version 2.1.0.* You can optionally set the [`--remote`][2] flag:
 
 ```yml
 steps:
