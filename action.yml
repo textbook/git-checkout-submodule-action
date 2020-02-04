@@ -1,0 +1,9 @@
+name: Checkout submodules
+author: Jonathan Sharpe
+description: Recursively checks out any submodules in your repository
+runs:
+  using: docker
+  image: Dockerfile
+branding:
+  icon: package
+  color: blue
