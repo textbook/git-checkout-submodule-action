@@ -4,6 +4,8 @@ Recursively checks out any submodules in your repository.
 
 ```yml
 steps:
+- name: Checkout reposistory
+  uses: actions/checkout@master
 - name: Checkout submodules
   uses: textbook/git-checkout-submodule-action@master
 ```
@@ -12,6 +14,8 @@ steps:
 
 ```yml
 steps:
+- name: Checkout reposistory
+  uses: actions/checkout@master
 - name: Checkout submodules
   uses: textbook/git-checkout-submodule-action@master
   with:
@@ -24,6 +28,8 @@ You can use [git Actions][1] instead:
 
 ```yml
 steps:
+- name: Checkout reposistory
+  uses: actions/checkout@master
 - name: Checkout submodules
   uses: srt32/git-actions@v0.0.3
   with:
