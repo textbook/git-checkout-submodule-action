@@ -15,7 +15,7 @@ steps:
 ```yml
 steps:
 - name: Checkout reposistory
-  uses: actions/checkout@master
+  uses: actions/checkout@v2
 - name: Checkout submodules
   uses: textbook/git-checkout-submodule-action@master
   with:
@@ -24,22 +24,32 @@ steps:
 
 ## Alternatives
 
-- You can just run the command directly:
+- You can use the `submodules` input to the checkout action:
+
+    ```yml
+    steps:
+    - name: Checkout repository and submodules
+      uses: actions/checkout@v2
+      with:
+        submodules: recursive
+    ```
+
+- just run the command directly:
 
     ```yml
     steps:
     - name: Checkout reposistory
-      uses: actions/checkout@master
+      uses: actions/checkout@v2
     - name: Checkout submodules
       run: git submodule update --init --recursive
     ```
 
-- Or use [git Actions][1] instead:
+- or use [git Actions][1] instead:
 
     ```yml
     steps:
     - name: Checkout reposistory
-      uses: actions/checkout@master
+      uses: actions/checkout@v2
     - name: Checkout submodules
       uses: srt32/git-actions@v0.0.3
       with:
