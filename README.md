@@ -4,7 +4,7 @@ Recursively checks out any submodules in your repository.
 
 ```yml
 steps:
-- name: Checkout reposistory
+- name: Checkout repository
   uses: actions/checkout@master
 - name: Checkout submodules
   uses: textbook/git-checkout-submodule-action@master
@@ -14,7 +14,7 @@ steps:
 
 ```yml
 steps:
-- name: Checkout reposistory
+- name: Checkout repository
   uses: actions/checkout@v2
 - name: Checkout submodules
   uses: textbook/git-checkout-submodule-action@master
@@ -38,7 +38,7 @@ steps:
 
     ```yml
     steps:
-    - name: Checkout reposistory
+    - name: Checkout repository
       uses: actions/checkout@v2
     - name: Checkout submodules
       run: git submodule update --init --recursive
@@ -48,7 +48,7 @@ steps:
 
     ```yml
     steps:
-    - name: Checkout reposistory
+    - name: Checkout repository
       uses: actions/checkout@v2
     - name: Checkout submodules
       uses: srt32/git-actions@v0.0.3
