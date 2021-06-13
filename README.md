@@ -1,3 +1,5 @@
+> ⛔ **Note** I am no longer maintaining this repository, please use one of the [alternatives](#alternatives) below
+
 # Checkout Submodule Action
 
 Recursively checks out any submodules in your repository.
